@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    color:#ffffff;
+    font-family: 'Oswald', sans-serif;;
+}
+
+body{
+    background:#121212;
+}
+
+.container,.gameContainer,.initializeGame{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+.container{
+    align-items: center;
+    margin-top:12rem;
+}
+
+h1{
+    font-weight: 400;
+}
+.container > h1{
+    font-size:6rem;
+}
+
+.a,.mic-icon{
+    cursor:pointer;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 200;
+    border-radius: 20px;
+    padding:0.5rem 2rem;
+    margin-top: 0.5rem;
+    border:1px solid #ffffff;
+}
+
+.gameContainer > h1{
+    font-size:3rem;
+}
+.gameContainer{
+    animation-name: onloadTrans;
+    animation-duration: 1s;
+    margin-top:8rem;
+}
+
+@keyframes onloadTrans {
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+.mic-icon{
+    font-size:5rem;
+}
+
+.numberGuessed{
+    margin-top:0.5rem;
+    border:1px solid;
+}
+
+.mic-icon,.numberGuessed{
+    padding:1rem;
+}
+
+.hint{
+    font-size:2rem;
+}
+
+.initializeGame,.playBtn{
+    visibility: hidden;
+}
+
+
+@media screen and (max-width:650px){
+    .container > h1{
+        font-size:3rem;
+    }
+    .gameContainer > h1{
+        font-size:2rem;
+    }
+}
