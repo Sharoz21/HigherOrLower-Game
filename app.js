@@ -2,11 +2,11 @@ const micBtn = document.querySelector('.mic-icon');
 const guessDisplay = document.querySelector('.numberGuessed');
 const hintDisplay = document.querySelector('.hint');
 const initializeGame = document.querySelector('.initializeGame');
-const playBtn = document.querySelector('.playBtn')
+const playBtn = document.querySelector('.playBtn');
 
 if("webkitSpeechRecognition" in window){
     const speechObj = new webkitSpeechRecognition();
-    const randomNum = Math.round(Math.random()*1000)
+    const randomNum = Math.round(Math.random()*1000);
 
     micBtn.addEventListener("click", () => {
         speechObj.lang = "en-US";
